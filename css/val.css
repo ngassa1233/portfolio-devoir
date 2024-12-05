@@ -1,0 +1,92 @@
+/* fonts */
+
+@font-face{
+    font-family: Nunito;
+    src: url(fonts/nunito-regular.tff);
+    font-weight: 500;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(fonts/nunito-bold.tff);
+    font-weight: 700;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(fonts/nunito-light.tff);
+    font-weight: 300;
+}
+/* Generale */
+body{
+    background-color: #efefef;
+    font-family: Nunito, sans-serif;
+}
+a ,a:hover, a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+/* Header */
+header{
+    line-height: 50px;
+    background: #5fcf80;
+    text-align: center;
+    font-weight: 700;
+}
+header h1 a {
+    font-size: 1.5en;
+}
+header nav{
+    font-size: 0.9en;
+}
+/* presentation */
+section{
+    padding: 30px 0px;
+    background: #fff;
+    border-bottom: 3px solid #ddd;
+    text-align: center;
+}
+section h1 {
+    font-size: 2.5en;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+section p {
+    font-size: 1.2en;
+    color: #777;
+    line-height: 1.4en;
+    font-style: italic;
+}
+/* articles */
+.articles{
+    margin-bottom: 30px;
+}
+article{
+    margin-top: 30px;
+    border-radius: 7px;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+}
+article img {
+    border-radius: 7px 7px o o;
+}
+article h1, article a, article p{
+    margin: 20px;
+}
+article h1{
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1en;
+    line-height: 1.3en;
+}
+article p{
+    color: #555;
+    line-height: 1.4en;
+    }
+    article{
+        display: block;
+        background: #5fcf80;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 40px;
+        border-bottom: 2px solid #4ca666;
+    }
