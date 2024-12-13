@@ -2,50 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" content="je m'appel VANELLE et je suis developpeur web">
-    <link rel="stylesheet" href="../css/val.css">
-    <title>VANELLE developpeur web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding_cleverly</title>
 </head>
-  <body>
-<header>
-    <div class="container">
-    <div class="row">
-   <div class="col-sn-2">
-      <h1><a href="folio.html">Infoprog_</a></h1>
-</div>
-<div class="col-sn-10">
-<nav>
-    <ul>
-        <li><a href="folio.html">Mes derniers travaux</a></li>
-        <li><a href="https://www.facebook.com/Infoprog.tuto" target="_blank">Ma page facebook</a></li>
-    </ul>
-</nav>
-</div>
-    </div>
-    </div>
-     </div>
-</header>
-     <section>
-         <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <h1>Développeur web</h1>
-                <p> Je m'appelle VANELLE NGASSA , étudiante en developpement full stack PHP a localhost academy</p>
-              </div>
-            </div>
-         </div>
-     </section>
-     <div class="container">
-        <div class="row articles">
-           <div>
-             <article>
-                <img src="../img/Magazine.jpg" alt="logo facebook">
-                <h1>Mon projet</h1>
-                <p>passione d'informatique je fait une formation en developpement full stack php</p>
-                <a href="target"_blank>Voir le resultat</a>
-             </article>
+<link rel="stylesheet" href="../css/val.css">
+<body>
+    <header class="Hero-content">
+       <nav class="navbar">
+     <h2 class="logo"> <strong>Portfolio</strong></h2>
+         <ul class="nav-links">
+            <li><a href="#about"> About </a></li>
+            <li><a href="#skills"> Skills </a></li>
+            <li><a href="#Work"> Work </a></li>
+            <li><a href="#contact"> contact </a></li>
+         </ul>
+       </nav>
+    </header>
+    <section id="about" class="about">
+        <div class="cercle">
+            <img src="../img/photo.jpg" class="image">
+        </div>
+         <div class="about-text">
+               <h1><u><em>About Me</em></u> </h1>
+               <h2>Hello, I'm VANELLE NGASSA</h2>
+               <p>developpeur web full stack PHP</p>
+               <p>I'm a passionate web developer and creating websites,especially programming languages like HTML and 
+                what interests me most in HTML and CSS programming is text formatting and creating responsive designs </p>
            </div>
+    </section>
+    <section id="Skills" class="Skills">
+        <h1><u><em>My Skills</em></u></h1>
+        <div class="skills-card">
+            <div class="skill-card"> HTML </div>
+            <div class="skill-card"> CSS </div>
+        </div>
+    </section>
+    <section id="project" class="projects">
+        <h1 class="MY PROJECTS-center"><u><em>My Projects</em></u></h1>
+     <div class="project-horizontaux">
+        <div class="project">
+            <h2>developpement web pour une entreprise de marketing</h2>
+            <p>technologies utilisées: HTML,CSS</p>
+        </div>
+        <div class="project">
+            <h2>creation des applications mobiles pour la gestion des taches</h2>
+            <p>technologies utilisées:JAVA,STUDIO ANDROID</p>
+        </div>
+        <div class="project">
+            <h2>creation d'un site web de landing</h2>
+            <p>technologies utilisées: HTML,CSS</p>
+        </div>
+        <div class="project">
+            <h2>creation d'un portfolio</h2>
+            <p>technologies utilisées: HTML,CSS,BOOTSTRAP</p>
         </div>
      </div>
+    </section>
+    <section id="contact" class="contact">
+        <h1><u><em>Contact Me</em></u> </h1>
+        <form class="contact-form">
+            <input type="text" placeholder ="your name" required>
+            <input type="email"placeholder ="your email" required>
+            <textarea placeholder="your message" required></textarea>
+            <button type="submit" Send Message ></button>
+        </form>
+    </section>
+        <footer class="footer">
+        <p> Follow Me </p>
+        <div class="social-links">
+            <a href="#"> linkendin </a>
+            <a href="#"> Github </a>
+            <a href="#"> twiter </a>
+       <p>copy ; 2024 My portfolio. All right reserved</p>
+    </footer>
 </body>
 </html>

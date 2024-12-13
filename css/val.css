@@ -1,92 +1,182 @@
-/* fonts */
-
-@font-face{
-    font-family: Nunito;
-    src: url(fonts/nunito-regular.tff);
-    font-weight: 500;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@font-face{
-    font-family: Nunito;
-    src: url(fonts/nunito-bold.tff);
-    font-weight: 700;
-}
-@font-face{
-    font-family: Nunito;
-    src: url(fonts/nunito-light.tff);
-    font-weight: 300;
-}
-/* Generale */
 body{
-    background-color: #efefef;
-    font-family: Nunito, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color:#3498DB;
+    color:#555;
 }
-a ,a:hover, a:focus {
-    text-decoration: none;
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    color:#fff;
+}
+.navbar .nav-links {
+       display: flex;
+       list-style: none;
+}
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+.navbar .nav-links a {
     color: #fff;
+    text-decoration: none;
+    transition: color 0,6s;
 }
-/* Header */
-header{
-    line-height: 50px;
-    background: #5fcf80;
+.navbar .nav-links a :hover{
+      color:#333;
+}
+.about {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+
+}
+.cercle{
+   width: 350px;
+   height: 350px;
+   border-radius: 50%;
+   overflow: visible;
+
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+}
+.image:hover {
+   border-color: #ff69b4;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,8);
+}
+ .skills {
+    padding: 60px;
+    background-color:#333;
     text-align: center;
-    font-weight: 700;
+ }
+ .skill-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .skill-card {
+    background-color:#333;
+    color:#fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 120px;
+    transition: transform 0,3s;
+ }
+ .skill-card:hover {
+   background-color:#ff69b4;
+    transform: scale(1.1);
+ }
+
+h1{
+  text-align: center;
+  margin: 0 auto;
 }
-header h1 a {
-    font-size: 1.5en;
-}
-header nav{
-    font-size: 0.9en;
-}
-/* presentation */
-section{
-    padding: 30px 0px;
-    background: #fff;
-    border-bottom: 3px solid #ddd;
+
+ .project {
+    padding: 60px;
+    background-color:#3498DB;
     text-align: center;
+ }
+ .projects-horizontaux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .project {
+   width: 45%;
+   margin: 20px;
+   padding: 20px;
+   background-color: #f7f7f7;
+   border: 1px solid #ddd;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
+   border-radius: 70px;
+
+ }
+ .project:nth-child(1){
+   margin-top: 0;
+
 }
-section h1 {
-    font-size: 2.5en;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+.project:nth-child(2){
+   margin-top: -50px;
+   margin-left: 50%;
 }
-section p {
-    font-size: 1.2en;
-    color: #777;
-    line-height: 1.4en;
-    font-style: italic;
+.project:nth-child(3){
+   margin-top: 50px;
+   margin-left: 0;
 }
-/* articles */
-.articles{
-    margin-bottom: 30px;
+.project:nth-child(4){
+   margin-top: -50px;
+   margin-left: 50%;
 }
-article{
-    margin-top: 30px;
-    border-radius: 7px;
-    background: #fff;
-    border-bottom: 2px solid #ddd;
-}
-article img {
-    border-radius: 7px 7px o o;
-}
-article h1, article a, article p{
-    margin: 20px;
-}
-article h1{
-    font-weight: bold;
-    color: #333;
-    font-size: 1.1en;
-    line-height: 1.3en;
-}
-article p{
-    color: #555;
-    line-height: 1.4en;
-    }
-    article{
-        display: block;
-        background: #5fcf80;
-        border-radius: 4px;
-        text-align: center;
-        line-height: 40px;
-        border-bottom: 2px solid #4ca666;
-    }
+ .project:hover {
+   background-color: blueviolet;
+    transform: scale(1.05);
+ }
+ .contact {
+    padding: 60px;
+    background: color #808080;
+    text-align: center;
+ }
+ .contact-form {
+    max-width: 500px;
+    margin: auto;
+ }
+ .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px o;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color:#3498DB;
+    color:#333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .contact-form button :hover {
+    background: color #fff;
+ }
+ .footer {
+    background-color:#3498DB;
+    color:#333;
+    padding: 20px;
+    text-align: center;
+ }
+ .footyer.social-links a {
+    color: #ffa500;
+    margin: 0 1opx;
+    text-decoration: none;
+    transition-delay: 0,3s;
+ }
+ .footer .social-links a :hover {
+    color:#333;
+ }
+ .nom-twitter{
+   position: relative;
+ }
+ 
